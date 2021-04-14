@@ -95,7 +95,7 @@ if __name__ == '__main__':
     # Do the training
     model, name, mp, history=train_model(name, train_x, train_y, epochs, batches)
     # Save models and the training history for later use
-    mname='models/model-%s-%d-%d' % (name, epochs, batches)
+    mname='/content/AI_for_Finance/Section_2/source/models/model-%s-%d-%d' % (name, epochs, batches)
     model.save(mname+'.h5')
     with open(mname+'-history.pickle', 'wb') as ms:
         pickle.dump(history.history, ms)
