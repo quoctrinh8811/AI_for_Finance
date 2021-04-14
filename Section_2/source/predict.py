@@ -19,7 +19,7 @@ import os
 if __name__ == '__main__':
     name, epochs, batches, _=get_params(script='predict.py')
     model,_=confs[name]
-    mname='models/model-%s-%d-%d.h5' % (name, epochs, batches)
+    mname='/content/AI_for_Finance/Section_2/source/models/model-%s-%d-%d.h5' % (name, epochs, batches)
     # Loading the model.
     if os.path.exists(mname):
         model=load_model(mname)
