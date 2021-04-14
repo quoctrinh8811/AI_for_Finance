@@ -64,7 +64,7 @@ def get_vpo(values):
         yy[i+1]=values[i]
     return yy
 
-def get_data(f='data/ec.csv', logme=lambda x:x):
+def get_data(f='/content/AI_for_Finance/Section_2/source/data/ec.csv', logme=lambda x:x):
     """
     Get exchange rate data and prepare it for use in a neural network.
     We have to skip the first day where we have no past data, so we have no base
